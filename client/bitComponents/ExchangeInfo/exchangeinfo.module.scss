@@ -1,0 +1,48 @@
+.extraContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 10px 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+    span{
+        font-size: 14px;
+    }
+    .gasContainer{
+        display: flex;
+        align-items: center;
+        .gasTextContainer{
+            display: flex;
+            align-items: center;
+            background-color: rgb(33, 36, 41);
+            padding: 5px;
+            border-radius: 10px;
+            .iconGas{
+                margin: 0px 5px;
+                color: rgb(143, 150, 172);
+            }
+            small{
+                margin: 0px 5px;
+                color: rgb(143, 150, 172);  
+            }
+        }
+        .gasSelectorArrow{
+        
+        }
+    }
+    
+}
+.lightExtra{
+    // background-color: rgb(255, 255, 255);
+    &:hover{
+        background-color: rgb(247, 248, 255,0.1);
+    }
+}
+.darkExtra{
+    // background-color: #191B1F;
+    &:hover{
+        background-color: rgb(44, 47, 54);
+    }
+}

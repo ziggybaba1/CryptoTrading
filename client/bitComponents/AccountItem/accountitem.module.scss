@@ -1,0 +1,24 @@
+.itemContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.lightHover{
+    border-color:#aaa;
+    &:hover{
+        border-color: rgb(80, 144, 234);
+    }
+}
+.darkHover{
+    border-color:rgb(255,255,255,0.4);
+    &:hover{
+        border-color: rgb(80, 144, 234);
+    }
+}

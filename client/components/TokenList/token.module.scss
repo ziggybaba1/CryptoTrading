@@ -1,0 +1,76 @@
+.tokenContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    .tokenColumn{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 1rem;
+        width: 60vw;
+        max-width: 25rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 24px;
+        padding:14px;
+        box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+        @media screen and (max-width: 600px){
+            width:  80vw;
+            }
+        .headerContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px; 
+        }
+        .inputContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: 20px 0px 20px 0px;
+            @media screen and (max-width: 600px){
+            margin-left:0px;
+            margin-right: 0px;
+            width: 100%;
+            }
+            span{
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px;
+            }
+            input{
+                letter-spacing: inherit;
+                height: 30px;
+                color: black;
+                border:1px solid rgb(209, 204, 204);
+                outline-color: rgb(210, 63, 87,0.9);
+                border-radius: 20px;
+                box-sizing: content-box;
+                background: none;
+                margin: 0px;
+                -webkit-tap-highlight-color: transparent;
+                display: block;
+                min-width: 0px;
+                width: 100%;
+                animation-name: mui-auto-fill-cancel;
+                animation-duration: 10ms;
+                resize: none;
+                padding: 10px;
+            }
+        }
+        .itemList{
+            height: 50vh;
+            overflow-y: auto;
+        }
+       
+    }
+}

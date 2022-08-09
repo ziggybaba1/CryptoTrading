@@ -1,0 +1,142 @@
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .button{
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       border-radius: 20px;
+       background-color: #191B1F;
+       margin: 5px;
+       font-size: 15px;
+       font-weight: 600;
+        .buttonImageContainer{
+            display: flex;
+            align-items: center;
+            p{
+                margin:0px 10px 0px 10px;
+                font-size: 15px;
+                font-weight: 500;
+                @media screen and (max-width: 600px){
+                    display: none;
+                 }
+            }
+        }
+        .buttonTextContainer{
+            height: 20px;
+            align-items: center;
+        }
+        .buttonAccent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #172A42;
+            border: 1px solid #f7f8f9;
+            height:100%;
+            white-space: nowrap;
+            width: auto;
+            border-radius: 20px;
+            color: #4F90EA;
+            @media screen and (max-width: 600px){
+                border: none;
+                }
+           p{
+            flex: 1 1 auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: fit-content;
+            font-weight: 500;
+           }
+            // @media screen and (max-width: 600px){
+            //    font-size: 12px;
+            //  }
+           .priceContainer{
+            display: flex;
+            flex-direction: row;
+            margin-right: 5px;
+            padding: 5px;
+            span{
+                margin-left: 5px;
+            }
+           }
+           .imageContainer{
+            display: flex;
+            align-items: center;
+            border: 1px solid transparent;
+            background-color: #191B1F;
+            border-radius: 20px;
+            padding: 5px;
+            cursor: pointer;
+            .svgRound{
+                border-radius: 50px;
+                overflow: hidden;
+                padding: 0px;
+                margin: 0px 0px 0px 5px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background: rgb(249, 63, 1);
+            }
+           }
+        }
+        .categoryData{
+            position: absolute;
+            // padding: 0rem 0px;
+            right: 1%;
+            top: 62px;
+            width:200px;
+            border-radius: 20px;
+            transform: scaleY(1);
+            transform-origin: center top;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+            transition: all 250ms ease-in-out 0s;
+            z-index: 10;
+            border:1px solid transparent;
+             max-height: auto;
+             overflow-y: auto;
+             @media screen and (max-width: 900px){
+                right: 3%;
+                top: 58px;
+                width:200px;
+                max-height: auto;
+               }
+            .listCategory{
+                list-style-type: none;
+                padding:10px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #2B3445;
+                    margin: 3px 0px 3px 0px;
+                    padding:5px;
+                    &:hover{
+                        background-color: rgb(49, 51, 54, 0.1);
+                    }
+                    a{
+                        font-weight: 500;
+                       outline: none;
+                       text-decoration: none;
+                       font-size: 16px;
+                       
+                       cursor: pointer;
+                       white-space: wrap;
+                      
+                      
+                    }
+                }
+            }
+        }
+        .nocategoryData{
+            display:none ;
+        }
+    }
+    .buttonPadding{
+        padding: 10px;
+    }
+}

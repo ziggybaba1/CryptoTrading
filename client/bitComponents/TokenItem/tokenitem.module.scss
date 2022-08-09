@@ -1,0 +1,17 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+    padding: 3px;
+    .imageContainer{
+        margin-left: 10px;
+    }
+    .labelColumn{
+        display: flex;
+        flex-direction: column;
+        margin-left:10px;
+    }
+}

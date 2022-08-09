@@ -1,0 +1,26 @@
+.confirmButton{
+    background-color:transparent ;
+    margin:10px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid transparent;
+    cursor: pointer;
+   
+}
+.hoverLightButton{
+    &:hover{
+        border:1px solid rgb(225, 194, 206);
+        background-color: rgb(225, 194, 206);
+        }
+}
+.hoverDarkButton{
+    &:hover{
+        border:1px solid #234169;
+        background-color: rgba(101, 134, 174, 0.44);
+        }
+}

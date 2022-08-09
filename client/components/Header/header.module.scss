@@ -1,0 +1,14 @@
+.wrapper{
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    .headerContainer{
+        display: flex;
+        width: calc(100vw/4);
+        justify-content:flex-start;
+        align-items: center;
+    }
+    
+}
